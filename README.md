@@ -111,7 +111,7 @@ Add new testimonial cards in the testimonials section following the existing str
 
 ## Contact
 
-For questions or support, contact: mohammed@tkanh.io
+For questions or support, contact: mohammad@tkanh.io
 
 ## License
 
