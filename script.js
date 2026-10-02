@@ -16,6 +16,9 @@ function setLanguage(lang) {
     html.setAttribute('lang', lang);
     html.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
     localStorage.setItem('language', lang);
+    document.title = lang === 'ar'
+        ? 'تكانة | استشارات البنية التحتية وDevOps'
+        : 'Tkanh | Infrastructure & DevOps Consultancy';
 
     // Update navigation links
     document.querySelectorAll('.nav-links a').forEach(link => {
