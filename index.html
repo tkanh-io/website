@@ -26,7 +26,7 @@
             <ul class="nav-links">
                 <li><a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
                 <li><a href="#services" data-ar="خدماتنا" data-en="Services">خدماتنا</a></li>
-                <li><a href="#testimonials" data-ar="آراء العملاء" data-en="Testimonials">آراء العملاء</a></li>
+                <li id="testimonialsNav"><a href="#testimonials" data-ar="آراء العملاء" data-en="Testimonials">آراء العملاء</a></li>
                 <li><a href="#contact" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a></li>
             </ul>
         </div>
@@ -78,7 +78,7 @@
                         <span class="lang-en">Strategic Consulting</span>
                     </h3>
                     <p>
-                        <span class="lang-ar">نجمع بين الخبرة التقنية والرؤية الاستراتيجية لمساعدتك في التغلب على التحديات المعقدة في البنية التحتية، معماريات البرمجيات، والتحول السحابي</span>
+                        <span class="lang-ar">نجمع بين الخبرة التقنية والرؤية الاستراتيجية لمساعدتك في التغلب على التحديات المعقدة في البنية التحتية ومعماريات البرمجيات والتحول السحابي</span>
                         <span class="lang-en">We combine technical expertise with strategic insight to help you overcome complex challenges in infrastructure, software architecture, and cloud transformation</span>
                     </p>
                 </div>
@@ -95,7 +95,7 @@
                         <span class="lang-en">DevOps Engineering</span>
                     </h3>
                     <p>
-                        <span class="lang-ar">عمل عملي متخصص يركز على الأتمتة والكفاءة والتعلم المستمر - نضمن لك أنظمة موثوقة والمعرفة اللازمة للحفاظ عليها</span>
+                        <span class="lang-ar">تنفيذ عملي متخصص يركز على الأتمتة والكفاءة والتعلم المستمر - نضمن لك أنظمة موثوقة والمعرفة اللازمة للحفاظ عليها</span>
                         <span class="lang-en">Specialized hands-on work focusing on automation, efficiency, and continuous learning - ensuring reliable systems and the knowledge to sustain them</span>
                     </p>
                 </div>
@@ -112,7 +112,7 @@
                         <span class="lang-en">Multi-Cloud Solutions</span>
                     </h3>
                     <p>
-                        <span class="lang-ar">خبرة شاملة عبر جميع مزودي الخدمات السحابية في المملكة: AWS، GCP، Alibaba Cloud، وOracle Cloud - نصمم ونطبق حلولاً مخصصة لبيئتك</span>
+                        <span class="lang-ar">خبرة شاملة عبر جميع مزودي الخدمات السحابية في المملكة: AWS وGCP وAlibaba Cloud وOracle Cloud - نصمم ونطبق حلولاً مخصصة لبيئتك</span>
                         <span class="lang-en">Comprehensive expertise across all cloud providers in Saudi Arabia: AWS, GCP, Alibaba Cloud, and Oracle Cloud - designing and implementing tailored solutions for your environment</span>
                     </p>
                 </div>
@@ -131,6 +131,23 @@
                     <p>
                         <span class="lang-ar">نبني شراكات طويلة الأمد قائمة على الشفافية والفهم العميق لأهدافك - نقدم تأثيراً حقيقياً، وليس مجرد نصائح</span>
                         <span class="lang-en">Building long-term partnerships based on transparency and genuine understanding of your goals - delivering real impact, not just advice</span>
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3>
+                        <span class="lang-ar">الامتثال التنظيمي والقطاع المالي</span>
+                        <span class="lang-en">Regulatory Compliance &amp; Financial Sector</span>
+                    </h3>
+                    <p>
+                        <span class="lang-ar">خبرة في العمل مع البنوك الرقمية وشركات التمويل والجهات المالية الخاضعة لإشراف البنك المركزي السعودي (ساما) - نضمن توافق بنيتك التحتية وعملياتك مع متطلبات ساما والأطر التنظيمية، لتنمو بثقة بعيداً عن مخاطر عدم الامتثال</span>
+                        <span class="lang-en">Experience working with digital banks, financing companies, and financial institutions regulated by the Saudi Central Bank (SAMA) - ensuring your infrastructure and operations meet SAMA requirements and regulatory frameworks, so you can grow with confidence</span>
                     </p>
                 </div>
             </div>
@@ -164,7 +181,11 @@
             </p>
 
             <div class="testimonials-grid">
-                <!-- Testimonial 1 -->
+                <!--
+                    No real testimonials yet, so these placeholders are commented out.
+                    The whole section (and its nav link) hides itself while this grid has no cards.
+                    To bring it back, add real .testimonial-card blocks here using this template:
+
                 <div class="testimonial-card">
                     <div class="quote-icon">"</div>
                     <p class="testimonial-text">
@@ -183,7 +204,6 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 2 -->
                 <div class="testimonial-card">
                     <div class="quote-icon">"</div>
                     <p class="testimonial-text">
@@ -202,7 +222,6 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 3 -->
                 <div class="testimonial-card">
                     <div class="quote-icon">"</div>
                     <p class="testimonial-text">
@@ -220,6 +239,7 @@
                         </span>
                     </div>
                 </div>
+                -->
             </div>
         </div>
     </section>
@@ -233,7 +253,7 @@
             </h2>
             <p class="section-subtitle">
                 <span class="lang-ar">جاهزون لتحويل تحدياتك التقنية إلى فرص نجاح</span>
-                <span class="lang-en">Ready to transform your technical challenges into success opportunities</span>
+                <span class="lang-en">Ready to transform your technical challenges into opportunities for success</span>
             </p>
 
             <div class="contact-content">

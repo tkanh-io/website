@@ -115,3 +115,10 @@ window.addEventListener('load', () => {
         document.body.style.opacity = '1';
     }, 100);
 });
+
+// Hide the testimonials section and its nav link until real testimonials are added
+const testimonialsSection = document.getElementById('testimonials');
+if (testimonialsSection && !testimonialsSection.querySelector('.testimonial-card')) {
+    testimonialsSection.hidden = true;
+    document.getElementById('testimonialsNav')?.setAttribute('hidden', '');
+}
