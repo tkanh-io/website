@@ -59,7 +59,7 @@ const observer = new IntersectionObserver((entries) => {
 // Observe cards and elements
 window.addEventListener('DOMContentLoaded', () => {
     const animatedElements = document.querySelectorAll(
-        '.service-card, .testimonial-card, .info-item, .contact-cta, .provider'
+        '.service-card, .testimonial-card, .info-item, .contact-cta'
     );
 
     animatedElements.forEach((el, index) => {
@@ -97,7 +97,7 @@ window.addEventListener('scroll', () => {
 });
 
 // Add hover effect sound/haptic feedback simulation
-document.querySelectorAll('.service-card, .testimonial-card, .provider').forEach(card => {
+document.querySelectorAll('.service-card, .testimonial-card').forEach(card => {
     card.addEventListener('mouseenter', function() {
         this.style.transition = 'all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
     });
@@ -116,9 +116,9 @@ window.addEventListener('load', () => {
     }, 100);
 });
 
-// Hide the testimonials section and its nav link until real testimonials are added
+// Testimonials are hidden in the markup; show them only once real cards are added
 const testimonialsSection = document.getElementById('testimonials');
-if (testimonialsSection && !testimonialsSection.querySelector('.testimonial-card')) {
-    testimonialsSection.hidden = true;
-    document.getElementById('testimonialsNav')?.setAttribute('hidden', '');
+if (testimonialsSection && testimonialsSection.querySelector('.testimonial-card')) {
+    testimonialsSection.hidden = false;
+    document.getElementById('testimonialsNav')?.removeAttribute('hidden');
 }

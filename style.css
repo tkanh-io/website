@@ -262,10 +262,15 @@ section {
 }
 
 .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
-    margin-bottom: 80px;
+}
+
+.services-grid .service-card {
+    flex: 0 1 calc((100% - 60px) / 3);
+    min-width: 280px;
 }
 
 .service-card {
@@ -317,45 +322,6 @@ section {
     line-height: 1.8;
 }
 
-/* Cloud Providers */
-.cloud-providers {
-    text-align: center;
-    margin-top: 60px;
-}
-
-.cloud-providers h3 {
-    font-size: 1.8rem;
-    color: var(--dark-color);
-    margin-bottom: 30px;
-    font-weight: 600;
-}
-
-.providers-list {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.provider {
-    background: var(--white);
-    padding: 20px 35px;
-    border-radius: 12px;
-    font-weight: 600;
-    color: var(--dark-color);
-    box-shadow: var(--shadow);
-    transition: var(--transition);
-    font-size: 1.1rem;
-}
-
-.provider:hover {
-    transform: translateY(-5px) scale(1.05);
-    box-shadow: var(--shadow-hover);
-    background: var(--dark-color);
-    color: var(--white);
-}
-
-/* Testimonials Section */
 .testimonials {
     background: var(--white);
 }
@@ -548,19 +514,14 @@ html[lang="en"] .info-item:hover {
         font-size: 1rem;
     }
 
-    .services-grid,
+    .services-grid .service-card {
+        flex-basis: 100%;
+    }
+
     .testimonials-grid {
         grid-template-columns: 1fr;
     }
 
-    .providers-list {
-        gap: 15px;
-    }
-
-    .provider {
-        padding: 15px 25px;
-        font-size: 1rem;
-    }
 
     section {
         padding: 60px 20px;

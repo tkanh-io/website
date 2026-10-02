@@ -26,7 +26,7 @@
             <ul class="nav-links">
                 <li><a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
                 <li><a href="#services" data-ar="خدماتنا" data-en="Services">خدماتنا</a></li>
-                <li id="testimonialsNav"><a href="#testimonials" data-ar="آراء العملاء" data-en="Testimonials">آراء العملاء</a></li>
+                <li id="testimonialsNav" hidden><a href="#testimonials" data-ar="آراء العملاء" data-en="Testimonials">آراء العملاء</a></li>
                 <li><a href="#contact" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a></li>
             </ul>
         </div>
@@ -112,7 +112,7 @@
                         <span class="lang-en">Multi-Cloud Solutions</span>
                     </h3>
                     <p>
-                        <span class="lang-ar">خبرة شاملة عبر جميع مزودي الخدمات السحابية في المملكة: AWS وGCP وAlibaba Cloud وOracle Cloud - نصمم ونطبق حلولاً مخصصة لبيئتك</span>
+                        <span class="lang-ar">خبرة شاملة عبر جميع مزودي الخدمات السحابية في المملكة: <bdi>AWS</bdi> و<bdi>GCP</bdi> و<bdi>Alibaba Cloud</bdi> و<bdi>Oracle Cloud</bdi> - نصمم ونطبق حلولاً مخصصة لبيئتك</span>
                         <span class="lang-en">Comprehensive expertise across all cloud providers in Saudi Arabia: AWS, GCP, Alibaba Cloud, and Oracle Cloud - designing and implementing tailored solutions for your environment</span>
                     </p>
                 </div>
@@ -152,24 +152,11 @@
                 </div>
             </div>
 
-            <!-- Cloud Providers -->
-            <div class="cloud-providers">
-                <h3>
-                    <span class="lang-ar">نعمل مع جميع مزودي الخدمات السحابية</span>
-                    <span class="lang-en">Working with All Cloud Providers</span>
-                </h3>
-                <div class="providers-list">
-                    <div class="provider">AWS</div>
-                    <div class="provider">Google Cloud</div>
-                    <div class="provider">Alibaba Cloud</div>
-                    <div class="provider">Oracle Cloud</div>
-                </div>
-            </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
+    <section id="testimonials" class="testimonials" hidden>
         <div class="container">
             <h2 class="section-title">
                 <span class="lang-ar">آراء عملائنا</span>
@@ -183,7 +170,7 @@
             <div class="testimonials-grid">
                 <!--
                     No real testimonials yet, so these placeholders are commented out.
-                    The whole section (and its nav link) hides itself while this grid has no cards.
+                    The whole section (and its nav link) stays hidden while this grid has no cards.
                     To bring it back, add real .testimonial-card blocks here using this template:
 
                 <div class="testimonial-card">
